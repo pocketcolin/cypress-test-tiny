@@ -1,3 +1,6 @@
 describe('page', () => {
-  it('works', () => {})
+  it('editing number input field', () => {
+    cy.visit('/test.html')
+    cy.get('input').clear().type(5)
+  })
 })
